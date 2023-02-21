@@ -1,7 +1,7 @@
 import React from 'react';
 
 // TODO: Add a comment explaining what is being passed to this "child" component as props
-
+// count, handleIncrement, and handleDecrement.
 function CardBody(props) {
   return (
     <div className="card-body">
