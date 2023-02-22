@@ -3,11 +3,15 @@ import React from 'react';
 import '../styles/Navbar.css';
 
 // TODO: Create a styles object called "styles"
+const styles = {
+  backgroundColor: "gray",
+  color: "black",
+}
 
 function Navbar() {
   // TODO: Add a style attribute to `nav`
   return (
-    <nav className="navbar">
+    <nav className="navbar" style={styles}>
       <a href="/">Welcome</a>
     </nav>
   );

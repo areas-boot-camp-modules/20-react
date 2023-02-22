@@ -1,4 +1,8 @@
 # 20. React
+- [20.1 Introduction to React](#20.1-introduction-to-react)
+- [20.2 Events, Forms, Fetching Data, and React Hooks](20.2-events-forms-fetching-data-and-react-hooks)
+- [20.3 React Styles, Conditional Rendering, and Testing](20.3-react-styles-conditional-rendering-and-testing)
+
 ## 20.1 Introduction to React
 - props are short for properties.
 - They’re JSON objects with key-value pairs.
@@ -12,7 +16,7 @@
 - We’ll need Babel and Webpack (tooling).
 
 ### Create React App
-- 
+- Set up takes a while. Would be good to learn best practices and alternatives.
 
 ### Render Element
 - With JSX, you can only return one parent element as a component.
@@ -59,7 +63,7 @@ export default function App() {
 - Remember, take a property and pass it to a child. The child takes it as an argument (pass like a variable), and is able to do something with it.
 - When ever you iteratively generate something with React, you need to create a key and pass it a unique value. Otherwise, React throws a warning (or error?).
 
-## Events, Forms, Fetching Data, and React Hooks
+## 20.2 Events, Forms, Fetching Data, and React Hooks
 - People used to use Redux.
 - Now, they use hooks.
 - People use functional components now (rather than classes).
@@ -142,3 +146,36 @@ return (
 - You can use fetch now, instead of axios (I think).
 - React is one-way data binding.
 - With inputs, you have to use `onChange` to update a field, or nothing will happen (see activity, line 32).
+
+## 20.3 React Styles, Conditional Rendering, and Testing
+
+### React Styles
+- Styles in components are scoped to component.
+- You can also have a normal CSS file that you import as an object. That’s more useful, since you can use normal CSS (which you can’t do in the component itself).
+
+```
+import React from "react"
+// import styles from "./style.css" // You may need extra setup to get this to work.
+
+const styles = {
+	card: {
+		background: "black",
+	},
+	heading: {
+		background: "white",
+	}
+}
+```
+
+### Conditional Rendering
+
+```
+
+```
+
+### Testing
+
+### Git Deploy
+- You can use this to deploy a React app to Pages (I think).
+
+### Mini-Project

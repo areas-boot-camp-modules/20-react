@@ -1,6 +1,7 @@
 import React from 'react';
 
 // TODO: Add a comment explaining how we are able to extract the key value pairs from props
+// They’re passed from the parent component, PortfolioContainer.
 
 function NavTabs({ currentPage, handlePageChange }) {
   return (
@@ -9,8 +10,8 @@ function NavTabs({ currentPage, handlePageChange }) {
         <a
           href="#home"
           onClick={() => handlePageChange('Home')}
-          //*  TODO: BONUS: Add a comment explaining what kind of operator this is and what it is checking for
-
+          // TODO: BONUS: Add a comment explaining what kind of operator this is and what it is checking for
+          // Ternary. If Home, set class active. Else no.
           className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
         >
           Home
@@ -20,8 +21,8 @@ function NavTabs({ currentPage, handlePageChange }) {
         <a
           href="#about"
           onClick={() => handlePageChange('About')}
-          //  TODO: Add a comment explaining what this logic is doing
-
+          // TODO: Add a comment explaining what this logic is doing
+          // Same as above.
           className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
         >
           About
@@ -32,7 +33,7 @@ function NavTabs({ currentPage, handlePageChange }) {
           href="#blog"
           onClick={() => handlePageChange('Blog')}
           //  TODO: Add a comment explaining what this logic is doing
-
+          // Same as above.
           className={currentPage === 'Blog' ? 'nav-link active' : 'nav-link'}
         >
           Blog
@@ -42,7 +43,7 @@ function NavTabs({ currentPage, handlePageChange }) {
         <a
           href="#contact"
           //  TODO: Add a comment explaining what this logic is doing
-
+          // Same as above.
           onClick={() => handlePageChange('Contact')}
           className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
         >
